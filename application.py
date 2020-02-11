@@ -25,8 +25,8 @@ with open('model.pkl', 'rb') as file:
 @application.route('/')
 def root():
     api_welcome_string = """Welcome to the PicMetric machine learning API!
-    - To analyze 1 image, please send a REST API POST request to '/summary' .
-    - To analyze multiple images at once, pleas send a REST API POST request
+    To analyze 1 image, please send a REST API POST request to '/summary' . 
+    To analyze multiple images at once, pleas send a REST API POST request
     to the '/batch_img_summary' route."""
     return api_welcome_string
 
