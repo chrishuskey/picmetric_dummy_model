@@ -24,7 +24,11 @@ with open('model.pkl', 'rb') as file:
 # Base route just so AWS doesn't show status as problematic:
 @application.route('/')
 def root():
-    return 'Welcome to the PicMetric machine learning API!'
+    api_welcome_string = """Welcome to the PicMetric machine learning API!
+    - To analyze 1 image, please send a REST API POST request to '/summary' .
+    - To analyze multiple images at once, pleas send a REST API POST request
+    to the '/batch_img_summary' route."""
+    return api_welcome_string
 
 # Route '/summary' that takes in a JSON with the URL for a
 # user's image, analzyes the image with our ML (DL) model, and
