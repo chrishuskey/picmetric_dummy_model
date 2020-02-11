@@ -21,6 +21,11 @@ with open('model.pkl', 'rb') as file:
     MODEL = pickle.load(file)
     file.close()
 
+# Base route just so AWS doesn't show status as problematic:
+@application.route('/')
+def root():
+    return 'Welcome to the PicMetric machine learning API!'
+
 # Route '/summary' that takes in a JSON with the URL for a
 # user's image, analzyes the image with our ML (DL) model, and
 # returns information about the image in a JSON:

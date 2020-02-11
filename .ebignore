@@ -3,9 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Files that are too large
-yolov3.h5
-
 # C extensions
 *.so
 
