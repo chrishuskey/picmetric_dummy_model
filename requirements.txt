@@ -6,7 +6,7 @@ flask==1.1.1
 idna==2.8
 itsdangerous==1.1.0
 jinja2==2.11.1
-joblib==0.14.1
+joblib==1.2.0
 markupsafe==1.1.1
 numpy==1.18.1
 requests==2.22.0
